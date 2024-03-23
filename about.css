@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("./eduford_img/background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2% 6%;
+}
+nav a img {
+  width: 150px;
+}
+.navlinks {
+  flex: 1;
+  text-align: right;
+}
+.text h3 {
+  color: orangered;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+ul li::after {
+  content: "";
+  margin: auto;
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: red;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+ul li:hover::after {
+  width: 100%;
+}
+svg {
+  color: rgb(255, 255, 255);
+}
+.fa-bars,
+.fa-xmark {
+  display: none;
+}
+.about {
+  display: flex;
+  width: 100%;
+  margin: 2rem auto;
+  justify-content: space-around;
+}
+.about img {
+  width: 80%;
+  height: 80%;
+}
+.btn {
+  color: orangered;
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.btn:hover {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: white;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  nav {
+    justify-content: space-between;
+  }
+  ul li {
+    display: block;
+  }
+  .navlinks {
+    background-color: orangered;
+    position: absolute;
+    height: 100vh;
+    visibility: hidden;
+    top: 0px;
+    right: 0;
+    z-index: 2;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 01s;
+    -ms-transition: 01s;
+    -o-transition: 01s;
+  }
+  .fa-xmark {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem;
+  }
+  .fa-bars {
+    display: block;
+    font-size: 2rem;
+  }
+  .about {
+    display: block;
+  }
+  .about img {
+    width: 100%;
+    height: 100%;
+  }
+}

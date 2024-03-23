@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="all.min.css" />
+
+    <title>eduford blog</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="#"><img src="./eduford_img/logo.png" alt="" /></a>
+        <i class="fa-solid fa-bars" id="menu" onclick="show()"></i>
+
+        <nav class="navlinks">
+          <i class="fa-solid fa-xmark" onclick="closeMenuF()"></i>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="courses.html">courses</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </nav>
+      <div class="text-box">
+        <h1>contact us</h1>
+      </div>
+    </div>
+    <br /><br />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6822.086328553531!2d29.971080931568157!3d31.247228392282512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1711034876370!5m2!1sar!2seg"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <section>
+      <div>
+        <h3><span>ADRESS:</span> Lorem ipsum</h3>
+        <p>Lorem, ipsum dolor.</p>
+        <br />
+        <h3><span>EMAIL:</span> Lorem ipsum</h3>
+        <p>Lorem, ipsum dolor.</p>
+        <br />
+        <h3>
+          <h3><span>PHONE:</span> 0123456789</h3>
+        </h3>
+        <p>Lorem, ipsum dolor.</p>
+        <br />
+      </div>
+      <div>
+        <form action="">
+          <fieldset>
+            <legend>leave a comment</legend>
+            <input type="text" name="" id="" placeholder="enter your name" />
+            <br />
+            <br />
+            <input type="email" name="" id="" placeholder="enter your E-mail" />
+            <br /><br />
+            <input type="email" name="" id="" placeholder="subject" />
+            <br /><br />
+            <textarea
+              name=""
+              id=""
+              cols="50"
+              rows="10"
+              placeholder="send us a message"
+            ></textarea>
+            <br />
+            <br />
+            <button type="submit" class="btn" id="submit" onsubmit="form()">
+              submit
+            </button>
+            <br /><br />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <h3>about us</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
+        eius?
+      </p>
+    </footer>
+    <script src="all.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
